@@ -7,7 +7,6 @@ var DEFAULTS = {
   files: [
       'dist/videojs-seek-buttons.css',
     'node_modules/sinon/pkg/sinon.js',
-    'node_modules/sinon/pkg/sinon-ie.js',
     'node_modules/video.js/dist/video.js',
     'test/**/*.js'
   ],
