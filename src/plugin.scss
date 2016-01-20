@@ -1,0 +1,38 @@
+// Sass for videojs-seek-buttons
+
+// USing material icon font
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+
+.video-js {
+
+  // This class is added to the video.js element by the plugin by default.
+  .vjs-seek-button {
+    font-family: 'Material Icons';
+    cursor: pointer;
+    
+    &.skip-back::before {
+      content: '\e042';
+    }
+    &.skip-back.skip-10::before {
+      content: '\e059';
+    }
+    &.skip-back.skip-5::before {
+      content: '\e05b';
+    }
+    &.skip-back.skip-30::before {
+      content: '\e05a';
+    }
+    &.skip-forward::before {
+      content: '\e5d5';
+    }
+    &.skip-forward.skip-10::before {
+      content: '\e056';
+    }
+    &.skip-forward.skip-5::before {
+      content: '\e058';
+    }
+    &.skip-forward.skip-30::before {
+      content: '\e057';
+    }
+  }
+}
