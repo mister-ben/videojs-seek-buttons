@@ -17,7 +17,7 @@ const defaults = {};
  * @param    {Object} [options={}]
  */
 const onPlayerReady = (player, options) => {
-  
+
   player.addClass('vjs-seek-buttons');
 
   if (options.forward && options.forward > 0) {
