@@ -1,6 +1,6 @@
 {
   "name": "videojs-seek-buttons",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "PLugin for video.js to add seek buttons to the control bar",
   "main": "es5/plugin.js",
   "scripts": {
