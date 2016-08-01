@@ -18,7 +18,7 @@ Plugin for video.js to add seek buttons to the control bar. Clicking the buttons
 
 ## Installation
 
-Install videojs-playlist via npm:
+Install videojs-seek-buttons via npm:
 
 ```sh
 $ npm install videojs-seek-buttons
@@ -32,7 +32,8 @@ The simplest method of inclusion is a `<script>` tag after the video.js `<script
 
 ```html
 <script src="path/to/video.js/dist/video.js"></script>
-<script src="path/to/videojs-playlist/dist/videojs-seek-buttons.js"></script>
+<script src="path/to/videojs-seek-buttons/dist/videojs-seek-buttons.js"></script>
+<link rel="spreadsheet" href="path/to/videojs-seek-buttons/dist/videojs-seek-buttons.css"></link>
 ```
 
 ## Usage
