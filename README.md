@@ -39,11 +39,13 @@ The simplest method of inclusion is a `<script>` tag after the video.js `<script
 ## Usage
 
 ```js
-var player = videojs('video');
-
-player.playlist([{
-  forward: 20,
-  back: 20
+videojs('videojs', {
+  plugins: {
+    seekButtons: {
+      forward: 15,
+      back: 15,
+    },
+  },
 });
 ```
 
