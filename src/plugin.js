@@ -1,9 +1,15 @@
 import videojs from 'video.js';
+import {version as VERSION} from '../package.json';
+
 const Button = videojs.getComponent('Button');
 const Component = videojs.getComponent('Component');
 
 // Default options for the plugin.
 const defaults = {};
+
+// Cross-compatibility for Video.js 5 and 6.
+const registerPlugin = videojs.registerPlugin || videojs.plugin;
+// const dom = videojs.dom || videojs;
 
 /**
  * Function to invoke when the player is ready.
@@ -14,35 +20,38 @@ const defaults = {};
  *
  * @function onPlayerReady
  * @param    {Player} player
+ *           A Video.js player object.
+ *
  * @param    {Object} [options={}]
+ *           A plain object containing options for the plugin.
  */
-const onPlayerReady = (player, options) => {
+ const onPlayerReady = (player, options) => {
 
-  player.addClass('vjs-seek-buttons');
+   player.addClass('vjs-seek-buttons');
 
-  if (options.forward && options.forward > 0) {
-    player.controlBar.seekForward = player.controlBar.addChild('seekButton', {
-      direction: 'forward',
-      seconds: options.forward
-    });
-    player.controlBar.el().insertBefore(
-      player.controlBar.seekForward.el(),
-      player.controlBar.el().firstChild.nextSibling
-    );
-  }
+   if (options.forward && options.forward > 0) {
+     player.controlBar.seekForward = player.controlBar.addChild('seekButton', {
+       direction: 'forward',
+       seconds: options.forward
+     });
+     player.controlBar.el().insertBefore(
+       player.controlBar.seekForward.el(),
+       player.controlBar.el().firstChild.nextSibling
+     );
+   }
 
-  if (options.back && options.back > 0) {
-    player.controlBar.seekBack = player.controlBar.addChild('seekButton', {
-      direction: 'back',
-      seconds: options.back
-    });
-    player.controlBar.el().insertBefore(
-      player.controlBar.seekBack.el(),
-      player.controlBar.el().firstChild.nextSibling
-    );
-  }
+   if (options.back && options.back > 0) {
+     player.controlBar.seekBack = player.controlBar.addChild('seekButton', {
+       direction: 'back',
+       seconds: options.back
+     });
+     player.controlBar.el().insertBefore(
+       player.controlBar.seekBack.el(),
+       player.controlBar.el().firstChild.nextSibling
+     );
+   }
 
-};
+ };
 
 /**
  * A video.js plugin.
@@ -112,6 +121,9 @@ class SeekButton extends Button {
 Component.registerComponent('SeekButton', SeekButton);
 
 // Register the plugin with video.js.
-videojs.plugin('seekButtons', seekButtons);
+registerPlugin('seekButtons', seekButtons);
+
+// Include the version number.
+seekButtons.VERSION = VERSION;
 
 export default seekButtons;

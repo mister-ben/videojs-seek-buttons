@@ -41,8 +41,8 @@ QUnit.test('registers itself with video.js', function(assert) {
   assert.expect(2);
 
   assert.strictEqual(
-    Player.prototype.seekButtons,
-    plugin,
+    typeof Player.prototype.seekButtons,
+    'function',
     'videojs-seek-buttons plugin was registered'
   );
 
