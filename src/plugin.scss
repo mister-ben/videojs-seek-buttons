@@ -35,4 +35,43 @@
       content: '\e057';
     }
   }
+  &.vjs-v6 {
+    .vjs-seek-button {
+      &.skip-back::before,
+      &.skip-back.skip-10::before,
+      &.skip-back.skip-5::before,
+      &.skip-back.skip-30::before,
+      &.skip-forward::before,
+      &.skip-forward.skip-10::before,
+      &.skip-forward.skip-5::before,
+      &.skip-forward.skip-30::before {
+        content: none;
+      }
+
+      &.skip-back .vjs-icon-placeholder::before {
+        content: '\e042';
+      }
+      &.skip-back.skip-10 .vjs-icon-placeholder::before {
+        content: '\e059';
+      }
+      &.skip-back.skip-5 .vjs-icon-placeholder::before {
+        content: '\e05b';
+      }
+      &.skip-back.skip-30 .vjs-icon-placeholder::before {
+        content: '\e05a';
+      }
+      &.skip-forward .vjs-icon-placeholder::before {
+        content: '\e5d5';
+      }
+      &.skip-forward.skip-10 .vjs-icon-placeholder::before {
+        content: '\e056';
+      }
+      &.skip-forward.skip-5 .vjs-icon-placeholder::before {
+        content: '\e058';
+      }
+      &.skip-forward.skip-30 .vjs-icon-placeholder::before {
+        content: '\e057';
+      }
+    }
+  }
 }
