@@ -22,7 +22,20 @@ This is the simplest case. Get the script in whatever way you prefer and include
 <script>
   var player = videojs('my-video');
 
-  player.seekButtons();
+  player.seekButtons({
+    forward: 30,
+    back: 10
+  });
+
+// You cam also include the plugin in the setup options, e.g.
+// var player = videojs('my-video', {
+//   plugins: {
+//     seekButtons: {
+//       forward: 30,
+//       back: 10
+//     }
+//   }
+// });
 </script>
 ```
 
@@ -40,7 +53,10 @@ require('videojs-seek-buttons');
 
 var player = videojs('my-video');
 
-player.seekButtons();
+player.seekButtons({
+  forward: 30,
+  back: 10
+});
 ```
 
 ### RequireJS/AMD
@@ -51,7 +67,10 @@ When using with RequireJS (or another AMD library), get the script in whatever w
 require(['video.js', 'videojs-seek-buttons'], function(videojs) {
   var player = videojs('my-video');
 
-  player.seekButtons();
+  player.seekButtons({
+    forward: 30,
+    back: 10
+  });
 });
 ```
 
