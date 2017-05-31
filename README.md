@@ -1,57 +1,63 @@
 # videojs-seek-buttons
 
-Plugin for video.js to add seek buttons to the control bar. Clicking the buttons seeks the video forward or back by the configured number of seconds.
-
-### Table of Contents
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-
-- [Installation](#installation)
-- [Inclusion](#inclusion)
-- [Usage](#usage)
-  - [Options](#options)
-- [License](#license)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+Plugin for video.js to add seek buttons to the control bar
 
 ## Installation
 
-Install videojs-seek-buttons via npm:
-
 ```sh
-$ npm install videojs-seek-buttons
-```
-
-## Inclusion
-
-Include videojs-seek-buttons on your website using the tool(s) of your choice.
-
-The simplest method of inclusion is a `<script>` tag after the video.js `<script>` tag:
-
-```html
-<script src="path/to/video.js/dist/video.js"></script>
-<script src="path/to/videojs-seek-buttons/dist/videojs-seek-buttons.js"></script>
-<link rel="spreadsheet" href="path/to/videojs-seek-buttons/dist/videojs-seek-buttons.css"></link>
+npm install --save videojs-seek-buttons
 ```
 
 ## Usage
 
-```js
-var player = videojs('video');
+To include videojs-seek-buttons on your website or web application, use any of the following methods.
 
-player.playlist([{
-  forward: 20,
-  back: 20
-});
+### `<script>` Tag
+
+This is the simplest case. Get the script in whatever way you prefer and include the plugin _after_ you include [video.js][videojs], so that the `videojs` global is available.
+
+```html
+<script src="//path/to/video.min.js"></script>
+<script src="//path/to/videojs-seek-buttons.min.js"></script>
+<script>
+  var player = videojs('my-video');
+
+  player.seekButtons();
+</script>
 ```
 
-### Options
+### Browserify/CommonJS
 
-* `forward: n`: If `n` is a positive integer, a seek forward button is added that seeks `n` seconds.
-* `back: n`: If `n` is a positive integer, a seek backward button is added that seeks `n` seconds.
+When using with Browserify, install videojs-seek-buttons via npm and `require` the plugin as you would any other module.
+
+```js
+var videojs = require('video.js');
+
+// The actual plugin function is exported by this module, but it is also
+// attached to the `Player.prototype`; so, there is no need to assign it
+// to a variable.
+require('videojs-seek-buttons');
+
+var player = videojs('my-video');
+
+player.seekButtons();
+```
+
+### RequireJS/AMD
+
+When using with RequireJS (or another AMD library), get the script in whatever way you prefer and `require` the plugin as you normally would:
+
+```js
+require(['video.js', 'videojs-seek-buttons'], function(videojs) {
+  var player = videojs('my-video');
+
+  player.seekButtons();
+});
+```
 
 ## License
 
 Apache-2.0. Copyright (c) Ben Clifford
+
+
+[videojs]: http://videojs.com/
