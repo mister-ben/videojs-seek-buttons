@@ -25,33 +25,33 @@ const registerPlugin = videojs.registerPlugin || videojs.plugin;
  * @param    {Object} [options={}]
  *           A plain object containing options for the plugin.
  */
- const onPlayerReady = (player, options) => {
+const onPlayerReady = (player, options) => {
 
-   player.addClass('vjs-seek-buttons');
+  player.addClass('vjs-seek-buttons');
 
-   if (options.forward && options.forward > 0) {
-     player.controlBar.seekForward = player.controlBar.addChild('seekButton', {
-       direction: 'forward',
-       seconds: options.forward
-     });
-     player.controlBar.el().insertBefore(
-       player.controlBar.seekForward.el(),
-       player.controlBar.el().firstChild.nextSibling
-     );
-   }
+  if (options.forward && options.forward > 0) {
+    player.controlBar.seekForward = player.controlBar.addChild('seekButton', {
+      direction: 'forward',
+      seconds: options.forward
+    });
+    player.controlBar.el().insertBefore(
+      player.controlBar.seekForward.el(),
+      player.controlBar.el().firstChild.nextSibling
+    );
+  }
 
-   if (options.back && options.back > 0) {
-     player.controlBar.seekBack = player.controlBar.addChild('seekButton', {
-       direction: 'back',
-       seconds: options.back
-     });
-     player.controlBar.el().insertBefore(
-       player.controlBar.seekBack.el(),
-       player.controlBar.el().firstChild.nextSibling
-     );
-   }
+  if (options.back && options.back > 0) {
+    player.controlBar.seekBack = player.controlBar.addChild('seekButton', {
+      direction: 'back',
+      seconds: options.back
+    });
+    player.controlBar.el().insertBefore(
+      player.controlBar.seekBack.el(),
+      player.controlBar.el().firstChild.nextSibling
+    );
+  }
 
- };
+};
 
 /**
  * A video.js plugin.
@@ -85,12 +85,12 @@ class SeekButton extends Button {
     if (this.options_.direction === 'forward') {
       this.controlText(
         this.localize('Seek forward {{seconds}} seconds')
-          .replace('{{seconds}}', this.options_.seconds)
+        .replace('{{seconds}}', this.options_.seconds)
       );
     } else if (this.options_.direction === 'back') {
       this.controlText(
         this.localize('Seek back {{seconds}} seconds')
-          .replace('{{seconds}}', this.options_.seconds)
+        .replace('{{seconds}}', this.options_.seconds)
       );
     }
   }
@@ -104,7 +104,7 @@ class SeekButton extends Button {
        specific one for "skip back 30 seconds"
     */
     return `vjs-seek-button skip-${this.options_.direction} ` +
-    `skip-${this.options_.seconds} ${super.buildCSSClass()}`;
+      `skip-${this.options_.seconds} ${super.buildCSSClass()}`;
   }
 
   handleClick() {
