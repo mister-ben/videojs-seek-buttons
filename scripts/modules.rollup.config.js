@@ -11,7 +11,12 @@ import json from 'rollup-plugin-json';
 export default {
   moduleName: 'videojsSeekButtons',
   entry: 'src/plugin.js',
-  external: ['video.js'],
+  external: [
+    'global',
+    'global/document',
+    'global/window',
+    'video.js'
+  ],
   globals: {
     'video.js': 'videojs'
   },
