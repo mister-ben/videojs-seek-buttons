@@ -33,13 +33,13 @@ export default {
       babelrc: false,
       exclude: 'node_modules/**',
       presets: [
-        ['es2015', {
+        ['env', {
           loose: true,
           modules: false
         }]
       ],
       plugins: [
-        // 'external-helpers',
+        'external-helpers',
         'transform-object-assign'
       ]
     })
