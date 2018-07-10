@@ -113,7 +113,7 @@
     "lodash-compat": "^3.10.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.9.2",
     "node-static": "^0.7.9",
     "npm-run-all": "^4.0.2",
     "portscanner": "^1.0.0",
