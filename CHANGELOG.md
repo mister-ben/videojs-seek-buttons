@@ -1,3 +1,6 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/mister-ben/videojs-seek-buttons/compare/v1.2.4...v1.3.0) (2018-08-08)
+
 <a name="1.2.4"></a>
 ## [1.2.4](https://github.com/mister-ben/videojs-seek-buttons/compare/v1.2.3...v1.2.4) (2017-12-28)
 
