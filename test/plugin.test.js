@@ -56,3 +56,33 @@ QUnit.test('registers itself with video.js', function(assert) {
     'the plugin adds a class to the player'
   );
 });
+
+QUnit.test('adds buttons with classes', function(assert) {
+  this.player.seekButtons({
+    forward: 30,
+    back: 10
+  });
+
+  // Tick the clock forward enough to trigger the player to be "ready".
+  this.clock.tick(1);
+
+  assert.ok(
+    this.player.controlBar.seekBack,
+    'the plugin adds a back button to the player'
+  );
+
+  assert.ok(
+    this.player.controlBar.seekForward,
+    'the plugin adds a forward button to the player'
+  );
+
+  assert.ok(
+    this.player.controlBar.seekBack.hasClass('skip-10'),
+    'the plugin adds a seconds class to the button'
+  );
+
+  assert.ok(
+    this.player.controlBar.seekBack.hasClass('skip-back'),
+    'the plugin adds a direction class to the button'
+  );
+});
