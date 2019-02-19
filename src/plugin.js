@@ -2,7 +2,6 @@ import videojs from 'video.js';
 import {version as VERSION} from '../package.json';
 
 const Button = videojs.getComponent('Button');
-const Component = videojs.getComponent('Component');
 
 // Default options for the plugin.
 const defaults = {};
@@ -10,6 +9,14 @@ const defaults = {};
 // Cross-compatibility for Video.js 5 and 6.
 const registerPlugin = videojs.registerPlugin || videojs.plugin;
 // const dom = videojs.dom || videojs;
+
+// document.sbInit = 0;
+
+// videojs.log('seek');
+// videojs.log(videojs === global.videojs);
+// videojs.log(videojs);
+// videojs.log(global.videojs);
+// videojs.log(document.body.querySelector('video'));
 
 /**
  * Function to invoke when the player is ready.
@@ -66,10 +73,14 @@ const onPlayerReady = (player, options) => {
  *           An object of options left to the plugin author to define.
  */
 const seekButtons = function(options) {
+  // document.sbInit++;
   this.ready(() => {
     onPlayerReady(this, videojs.mergeOptions(defaults, options));
   });
 };
+
+// Include the version number.
+seekButtons.VERSION = VERSION;
 
 /**
  * Button to seek forward/back
@@ -83,15 +94,11 @@ class SeekButton extends Button {
   constructor(player, options) {
     super(player, options);
     if (this.options_.direction === 'forward') {
-      this.controlText(
-        this.localize('Seek forward {{seconds}} seconds')
-        .replace('{{seconds}}', this.options_.seconds)
-      );
+      this.controlText(this.localize('Seek forward {{seconds}} seconds')
+        .replace('{{seconds}}', this.options_.seconds));
     } else if (this.options_.direction === 'back') {
-      this.controlText(
-        this.localize('Seek back {{seconds}} seconds')
-        .replace('{{seconds}}', this.options_.seconds)
-      );
+      this.controlText(this.localize('Seek back {{seconds}} seconds')
+        .replace('{{seconds}}', this.options_.seconds));
     }
   }
 
@@ -117,13 +124,10 @@ class SeekButton extends Button {
     }
   }
 }
-
-Component.registerComponent('SeekButton', SeekButton);
+// console.log('register component with', videojs.VERSION, videojs);
+videojs.registerComponent('SeekButton', SeekButton);
 
 // Register the plugin with video.js.
 registerPlugin('seekButtons', seekButtons);
-
-// Include the version number.
-seekButtons.VERSION = VERSION;
 
 export default seekButtons;
