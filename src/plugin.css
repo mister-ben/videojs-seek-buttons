@@ -1,12 +1,12 @@
-// Sass for videojs-seek-buttons
+/* Sass for videojs-seek-buttons */
 
-// USing material icon font
+/* Using material icon font */
 @import url(https://fonts.googleapis.com/css?family=Material+Icons);
 
 .video-js {
 
-  // This class is added to the video.js element by the plugin by default.
-  .vjs-seek-button {
+  /* This class is added to the video.js element by the plugin by default. */
+  & .vjs-seek-button {
     font-family: 'Material Icons';
     cursor: pointer;
 
@@ -37,7 +37,7 @@
   }
   &.vjs-v6,
   &.vjs-v7 {
-    .vjs-seek-button {
+    & .vjs-seek-button {
       &.skip-back::before,
       &.skip-back.skip-10::before,
       &.skip-back.skip-5::before,

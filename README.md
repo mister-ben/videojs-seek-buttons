@@ -2,6 +2,10 @@
 
 Plugin for video.js to add seek buttons to the control bar
 
+## Table of Contents
+
+<!-- START doctoc -->
+<!-- END doctoc -->
 ## Installation
 
 ```sh
@@ -26,16 +30,6 @@ This is the simplest case. Get the script in whatever way you prefer and include
     forward: 30,
     back: 10
   });
-
-// You cam also include the plugin in the setup options, e.g.
-// var player = videojs('my-video', {
-//   plugins: {
-//     seekButtons: {
-//       forward: 30,
-//       back: 10
-//     }
-//   }
-// });
 </script>
 ```
 
@@ -54,9 +48,9 @@ require('videojs-seek-buttons');
 var player = videojs('my-video');
 
 player.seekButtons({
-  forward: 30,
-  back: 10
-});
+    forward: 30,
+    back: 10
+  });
 ```
 
 ### RequireJS/AMD
@@ -76,7 +70,7 @@ require(['video.js', 'videojs-seek-buttons'], function(videojs) {
 
 ## License
 
-Apache-2.0. Copyright (c) Ben Clifford
+Apache-2.0. Copyright (c) mister-ben &lt;git@misterben.me&gt;
 
 
 [videojs]: http://videojs.com/
