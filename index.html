@@ -20,7 +20,10 @@
   <script>
     (function(window, videojs) {
       var examplePlayer = window.examplePlayer = videojs('videojs-seek-buttons-player');
-      var seekButtons = window.seekButtons = examplePlayer.seekButtons();
+      var seekButtons = window.seekButtons = examplePlayer.seekButtons({
+        forward: 30,
+        back: 10
+      });
     }(window, window.videojs));
   </script>
 </body>
