@@ -4,7 +4,10 @@ import {version as VERSION} from '../package.json';
 const Button = videojs.getComponent('Button');
 
 // Default options for the plugin.
-const defaults = {};
+const defaults = {
+  forwardIndex: 1,
+  backIndex: 1
+};
 
 // Cross-compatibility for Video.js 5 and 6.
 const registerPlugin = videojs.registerPlugin || videojs.plugin;
@@ -40,22 +43,14 @@ const onPlayerReady = (player, options) => {
     player.controlBar.seekForward = player.controlBar.addChild('seekButton', {
       direction: 'forward',
       seconds: options.forward
-    });
-    player.controlBar.el().insertBefore(
-      player.controlBar.seekForward.el(),
-      player.controlBar.el().firstChild.nextSibling
-    );
+    }, options.forwardIndex);
   }
 
   if (options.back && options.back > 0) {
     player.controlBar.seekBack = player.controlBar.addChild('seekButton', {
       direction: 'back',
       seconds: options.back
-    });
-    player.controlBar.el().insertBefore(
-      player.controlBar.seekBack.el(),
-      player.controlBar.el().firstChild.nextSibling
-    );
+    }, options.backIndex);
   }
 
 };

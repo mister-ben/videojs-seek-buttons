@@ -25,8 +25,16 @@ npm install --save videojs-seek-buttons
 
 ## Options
 
-* `forward` - if a number greater than 0, a seek forward button will be added which seeks that number of seconds
-* `back` - if a number greater than 0, a seek back button will be added which seeks that number of seconds
+- `forward` - if a number greater than 0, a seek forward button will be added which seeks that number of seconds
+- `back` - if a number greater than 0, a seek back button will be added which seeks that number of seconds
+- `forwardIndex` - the position in the control bar to insert the button. Defaults to `1`. See note below.
+- `backIndex` - the position in the control bar to insert the button. Defaults to `1`. See note below.
+
+### Control position
+
+`forwardIndex` and `backIndex` set the posiiton of the button in the control bar. Note if both a back and forward button are used, the forward button is inserted first.
+
+Assuming the standard control bar, the play button is at index `0`. With the default index of `1` for both, the forward button is inserted after the play button, then the back button is inserted after the play button and before the forward button. Setting `backIndex` to `0` would place the back button before the play button instead, so they surround the play button.
 
 ## Usage
 
