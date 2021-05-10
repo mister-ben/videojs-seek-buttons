@@ -1,41 +1,38 @@
 /* Sass for videojs-seek-buttons */
 
+/* Using material icon font */
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+
 .video-js {
 
   /* This class is added to the video.js element by the plugin by default. */
   & .vjs-seek-button {
-    font-family: 'VideoJS';
+    font-family: 'Material Icons';
     cursor: pointer;
-    font-weight: 400;
-    font-style: normal;
 
     &.skip-back::before {
-      content: '\f116';
+      content: '\e042';
     }
     &.skip-back.skip-10::before {
-      content: '\f116';
+      content: '\e059';
     }
     &.skip-back.skip-5::before {
-      content: '\f116';
+      content: '\e05b';
     }
     &.skip-back.skip-30::before {
-      content: '\f116';
+      content: '\e05a';
     }
     &.skip-forward::before {
-      transform: rotateY(180deg);
-      content: '\f116';
+      content: '\e5d5';
     }
     &.skip-forward.skip-10::before {
-      transform: rotateY(180deg);
-      content: '\f116';
+      content: '\e056';
     }
     &.skip-forward.skip-5::before {
-      transform: rotateY(180deg);
-      content: '\f116';
+      content: '\e058';
     }
     &.skip-forward.skip-30::before {
-      transform: rotateY(180deg);
-      content: '\f116';
+      content: '\e057';
     }
   }
   &.vjs-v6,
@@ -53,32 +50,28 @@
       }
 
       &.skip-back .vjs-icon-placeholder::before {
-        content: '\f116';
+        content: '\e042';
       }
       &.skip-back.skip-10 .vjs-icon-placeholder::before {
-        content: '\f116';
+        content: '\e059';
       }
       &.skip-back.skip-5 .vjs-icon-placeholder::before {
-        content: '\f116';
+        content: '\e05b';
       }
       &.skip-back.skip-30 .vjs-icon-placeholder::before {
-        content: '\f116';
+        content: '\e05a';
       }
       &.skip-forward .vjs-icon-placeholder::before {
-        transform: rotateY(180deg);
-        content: '\f116';
+        content: '\e5d5';
       }
       &.skip-forward.skip-10 .vjs-icon-placeholder::before {
-        transform: rotateY(180deg);
-        content: '\f116';
+        content: '\e056';
       }
       &.skip-forward.skip-5 .vjs-icon-placeholder::before {
-        transform: rotateY(180deg);
-        content: '\f116';
+        content: '\e058';
       }
       &.skip-forward.skip-30 .vjs-icon-placeholder::before {
-        transform: rotateY(180deg);
-        content: '\f116';
+        content: '\e057';
       }
     }
   }

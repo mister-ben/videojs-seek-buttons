@@ -1,9 +1,9 @@
 {
-  "name": "videojs-seek-buttons-google-free",
-  "repository": "https://github.com/joschahenningsen/videojs-seek-buttons",
-  "issues": "https://github.com/joschahenningsen/videojs-seek-buttons/issues",
-  "version": "1.6.1",
-  "description": "Plugin for video.js to add seek buttons to the control bar (fork without googleapis coupling)",
+  "name": "videojs-seek-buttons",
+  "repository": "https://github.com/mister-ben/videojs-seek-buttons",
+  "issues": "https://github.com/mister-ben/videojs-seek-buttons/issues",
+  "version": "1.5.0",
+  "description": "Plugin for video.js to add seek buttons to the control bar",
   "main": "dist/videojs-seek-buttons.cjs.js",
   "module": "dist/videojs-seek-buttons.es.js",
   "generator-videojs-plugin": {
@@ -31,13 +31,14 @@
     "test": "npm-run-all test:*",
     "posttest": "shx cat test/dist/coverage/text.txt",
     "test:unit": "karma start scripts/karma.conf.js",
+    "test:verify": "vjsverify --verbose",
     "update-changelog": "conventional-changelog -p videojs -i CHANGELOG.md -s",
     "preversion": "npm test",
     "version": "is-prerelease || npm run update-changelog && git add CHANGELOG.md",
     "watch": "npm-run-all -p watch:*",
     "watch:css": "npm run build:css -- -w",
     "watch:js": "npm run build:js -- -w",
-    "prepublishOnly": "npm-run-all build"
+    "prepublishOnly": "npm-run-all build test:verify"
   },
   "engines": {
     "node": ">=8",
@@ -90,7 +91,7 @@
     "jsdoc": "BrandonOCasey/jsdoc#fix/security-issue",
     "karma": "^3.0.0",
     "postcss-cli": "^6.0.0",
-    "rollup": "^1.32.1",
+    "rollup": "^1.1.0",
     "sinon": "^7.2.2",
     "videojs-generate-karma-config": "~5.0.2",
     "videojs-generate-postcss-config": "~2.1.0",

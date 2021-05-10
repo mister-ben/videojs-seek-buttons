@@ -9,6 +9,18 @@ const defaults = {
   backIndex: 1
 };
 
+// Cross-compatibility for Video.js 5 and 6.
+const registerPlugin = videojs.registerPlugin || videojs.plugin;
+// const dom = videojs.dom || videojs;
+
+// document.sbInit = 0;
+
+// videojs.log('seek');
+// videojs.log(videojs === global.videojs);
+// videojs.log(videojs);
+// videojs.log(global.videojs);
+// videojs.log(document.body.querySelector('video'));
+
 /**
  * Function to invoke when the player is ready.
  *
@@ -111,6 +123,6 @@ class SeekButton extends Button {
 videojs.registerComponent('SeekButton', SeekButton);
 
 // Register the plugin with video.js.
-videojs.registerPlugin('seekButtons', seekButtons);
+registerPlugin('seekButtons', seekButtons);
 
 export default seekButtons;
