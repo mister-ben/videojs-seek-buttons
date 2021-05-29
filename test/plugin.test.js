@@ -86,3 +86,35 @@ QUnit.test('adds buttons with classes', function(assert) {
     'the plugin adds a direction class to the button'
   );
 });
+
+QUnit.test('calls currentTime with the correct time', function(assert) {
+  this.player.seekButtons({
+    forward: 30,
+    back: 10
+  });
+
+  // Tick the clock forward enough to trigger the player to be "ready".
+  this.clock.tick(1);
+
+  const time = this.player.currentTime();
+
+  const spy = sinon.spy(this.player, 'currentTime');
+
+  this.player.controlBar.seekForward.trigger('click');
+
+  assert.ok(
+    spy.withArgs(time + 30).calledOnce,
+    'forward button triggers seek 30 seconds'
+  );
+
+  // Fake that the seek happened - it won't have as the test player has no source.
+  this.player.tech_.currentTime = () => 30;
+
+  this.player.controlBar.seekBack.trigger('click');
+
+  assert.ok(
+    spy.withArgs(20).calledOnce,
+    'back button triggers seek back 10 seconds'
+  );
+
+});
