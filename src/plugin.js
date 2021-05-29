@@ -80,12 +80,18 @@ seekButtons.VERSION = VERSION;
 /**
  * Button to seek forward/back
  *
- * @param {Player|Object} player
- * @param {Object=} options
  * @extends Button
- * @class SeekToggle
+ * @class SeekButton
  */
 class SeekButton extends Button {
+  /**
+   * Constructor for class
+   *
+   * @param {Player|Object} player The player
+   * @param {Object=} options Button options
+   * @param {string} options.direction back or forward
+   * @param {Int} options.seconds number of seconds to seek
+   */
   constructor(player, options) {
     super(player, options);
     if (this.options_.direction === 'forward') {
@@ -97,6 +103,11 @@ class SeekButton extends Button {
     }
   }
 
+  /**
+   * Return button class names which include the seek amount.
+   *
+   * @return {string} css cass string
+   */
   buildCSSClass() {
     /* Each button will have the classes:
        `vjs-seek-button`
@@ -109,6 +120,9 @@ class SeekButton extends Button {
       `skip-${this.options_.seconds} ${super.buildCSSClass()}`;
   }
 
+  /**
+   * Seek with the button's configured offset
+   */
   handleClick() {
     const now = this.player_.currentTime();
 
