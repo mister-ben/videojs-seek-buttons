@@ -10,10 +10,15 @@
     font-style: normal;
 
     &.skip-back::before {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg); /* IE 9 */
+      -webkit-transform: rotate(-45deg); /* Safari */
       content: '\f116';
     }
     &.skip-forward::before {
-      transform: rotateY(180deg);
+      transform: rotateY(180deg) rotate(-45deg);
+      -ms-transform: rotateY(180deg) rotate(-45deg); /* IE 9 */
+      -webkit-transform: rotateY(180deg) rotate(-45deg); /* Safari */
       content: '\f116';
     }
   }
@@ -25,10 +30,15 @@
         content: none;
       }
       &.skip-back .vjs-icon-placeholder::before {
+        transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotate(-45deg); /* Safari */
         content: '\f116';
       }
       &.skip-forward .vjs-icon-placeholder::before {
-        transform: rotateY(180deg);
+        transform: rotateY(180deg) rotate(-45deg);
+        -ms-transform: rotateY(180deg) rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotateY(180deg) rotate(-45deg); /* Safari */
         content: '\f116';
       }
     }
