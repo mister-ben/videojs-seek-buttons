@@ -77,6 +77,11 @@ QUnit.test('adds buttons with classes', function(assert) {
   );
 
   assert.ok(
+    this.player.controlBar.seekBack.hasClass('skip-10'),
+    'the plugin adds a seconds class to the button'
+  );
+
+  assert.ok(
     this.player.controlBar.seekBack.hasClass('skip-back'),
     'the plugin adds a direction class to the button'
   );
