@@ -112,8 +112,12 @@ class SeekButton extends Button {
     /* Each button will have the classes:
        `vjs-seek-button`
        `skip-forward` or `skip-back`
+       `skip-n` where `n` is the number of seconds
+       So you could have a generic icon for "skip back" and a more
+       specific one for "skip back 30 seconds"
     */
-    return `vjs-seek-button skip-${this.options_.direction} ${super.buildCSSClass()}`;
+    return `vjs-seek-button skip-${this.options_.direction} ` +
+      `skip-${this.options_.seconds} ${super.buildCSSClass()}`;
   }
 
   /**
