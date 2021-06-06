@@ -36,9 +36,9 @@
         content: '\f116';
       }
       &.skip-forward .vjs-icon-placeholder::before {
-        transform: rotateY(180deg) rotate(-45deg);
-        -ms-transform: rotateY(180deg) rotate(-45deg); /* IE 9 */
-        -webkit-transform: rotateY(180deg) rotate(-45deg); /* Safari */
+        transform: scale(-1, 1) rotate(-45deg);
+        -ms-transform: scale(-1, 1) rotate(-45deg); /* IE 9 */
+        -webkit-transform: scale(-1, 1) rotate(-45deg); /* Safari */
         content: '\f116';
       }
     }
