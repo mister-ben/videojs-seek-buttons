@@ -1,3 +1,8 @@
+
+### Features
+
+* Add Farsi (#49) ([eda3607b2c564b1578133a76ece4c90de64439f3](https://github.com/mister-ben/videojs-seek-buttons/commit/eda3607b2c564b1578133a76ece4c90de64439f3))
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/mister-ben/videojs-seek-buttons/compare/v1.3.0...v2.0.1) (2021-06-06)
 
