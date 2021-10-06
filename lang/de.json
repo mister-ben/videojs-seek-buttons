@@ -1,4 +1,4 @@
 {
-  "Seek forward {{seconds}} seconds": "Vorwärts {{seconds}} Sekunden",
-  "Seek back {{seconds}} seconds": "Zurück {{seconds}} Sekunden"
+  "Seek forward {{seconds}} seconds": "{{seconds}} Sekunden vorspulen",
+  "Seek back {{seconds}} seconds": "{{seconds}} Sekunden zurückspulen"
 }
