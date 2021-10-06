@@ -1,3 +1,10 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/mister-ben/videojs-seek-buttons/compare/v2.0.0...v2.2.0) (2021-10-06)
+
+### Bug Fixes
+
+* Workaround for Safari bug with rotateY (#47) ([eadd89a](https://github.com/mister-ben/videojs-seek-buttons/commit/eadd89a)), closes [#47](https://github.com/mister-ben/videojs-seek-buttons/issues/47)
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/mister-ben/videojs-seek-buttons/compare/v2.0.1...v2.1.0) (2021-07-20)
 
