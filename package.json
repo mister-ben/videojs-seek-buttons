@@ -88,6 +88,7 @@
   },
   "dependencies": {
     "global": "^4.4.0",
+    "shx": "^0.3.3",
     "video.js": "^6 || ^7"
   },
   "devDependencies": {
