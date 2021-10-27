@@ -10,16 +10,20 @@
     font-style: normal;
 
     &.skip-back::before {
-      transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg); /* IE 9 */
-      -webkit-transform: rotate(-45deg); /* Safari */
-      content: '\f116';
+      font-family: "Font Awesome 5 Free";
+      content: '\f100';
+      display: inline-block;
+      padding-right: 3px;
+      vertical-align: middle;
+      font-weight: 900;
     }
     &.skip-forward::before {
-      transform: rotateY(180deg) rotate(-45deg);
-      -ms-transform: rotateY(180deg) rotate(-45deg); /* IE 9 */
-      -webkit-transform: rotateY(180deg) rotate(-45deg); /* Safari */
-      content: '\f116';
+      font-family: "Font Awesome 5 Free";
+      content: "\f101";
+      display: inline-block;
+      padding-right: 3px;
+      vertical-align: middle;
+      font-weight: 900;
     }
   }
   &.vjs-v6,
@@ -30,16 +34,20 @@
         content: none;
       }
       &.skip-back .vjs-icon-placeholder::before {
-        transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg); /* IE 9 */
-        -webkit-transform: rotate(-45deg); /* Safari */
-        content: '\f116';
+        font-family: "Font Awesome 5 Free";
+        content: '\f100';
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
       }
       &.skip-forward .vjs-icon-placeholder::before {
-        transform: scale(-1, 1) rotate(-45deg);
-        -ms-transform: scale(-1, 1) rotate(-45deg); /* IE 9 */
-        -webkit-transform: scale(-1, 1) rotate(-45deg); /* Safari */
-        content: '\f116';
+        font-family: "Font Awesome 5 Free";
+        content: "\f101";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
       }
     }
   }

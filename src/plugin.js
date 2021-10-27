@@ -6,7 +6,7 @@ const Button = videojs.getComponent('Button');
 // Default options for the plugin.
 const defaults = {
   forwardIndex: 1,
-  backIndex: 1
+  backIndex: -1
 };
 
 // Cross-compatibility for Video.js 5 and 6.
