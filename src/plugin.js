@@ -125,11 +125,12 @@ class SeekButton extends Button {
    */
   handleClick() {
     const now = this.player_.currentTime();
+    const totalDuration = this.player_.duration();
 
     if (this.options_.direction === 'forward') {
-      this.player_.currentTime(now + this.options_.seconds);
+      this.player_.currentTime(Math.min(now + this.options_.seconds, totalDuration));
     } else if (this.options_.direction === 'back') {
-      this.player_.currentTime(now - this.options_.seconds);
+      this.player_.currentTime(Math.max(0, now - this.options_.seconds));
     }
   }
 }
