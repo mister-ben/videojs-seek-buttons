@@ -80,6 +80,7 @@ The dist versions will be available from services which host npm packages such a
 ### Browserify/CommonJS
 
 When using with Browserify, install videojs-seek-buttons via npm and `require` the plugin as you would any other module.
+Make sure if using React to also `include "videojs-seek-buttons/dist/videojs-seek-buttons.css"`, otherwise the icons will not appear in the control bar.
 
 ```js
 var videojs = require('video.js');
