@@ -88,6 +88,8 @@ QUnit.test('adds buttons with classes', function(assert) {
 });
 
 QUnit.test('calls currentTime with the correct time', function(assert) {
+  this.player.duration(100);
+
   this.player.seekButtons({
     forward: 30,
     back: 10
