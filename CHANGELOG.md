@@ -1,3 +1,14 @@
+<a name="2.2.1"></a>
+## [2.2.1](https://github.com/mister-ben/videojs-seek-buttons/compare/v2.2.0...v2.2.1) (2022-04-23)
+
+### Bug Fixes
+
+* don't try to seek past start or end (#68) ([e349018](https://github.com/mister-ben/videojs-seek-buttons/commit/e349018)), closes [#68](https://github.com/mister-ben/videojs-seek-buttons/issues/68) [#69](https://github.com/mister-ben/videojs-seek-buttons/issues/69)
+
+### Chores
+
+* Remove erroneous sass comment ([5efc6fd](https://github.com/mister-ben/videojs-seek-buttons/commit/5efc6fd))
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/mister-ben/videojs-seek-buttons/compare/v2.0.0...v2.2.0) (2021-10-06)
 
