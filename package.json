@@ -95,7 +95,7 @@
     "@babel/runtime": "^7.14.0",
     "@videojs/babel-config": "^0.2.0",
     "@videojs/generator-helpers": "~2.0.2",
-    "jsdoc": "~3.6.6",
+    "jsdoc": "^3.6.11",
     "karma": "^6.3.2",
     "postcss": "^8.2.13",
     "postcss-cli": "^8.3.1",
