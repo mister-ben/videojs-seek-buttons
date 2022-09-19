@@ -10,6 +10,7 @@ Plugin for video.js to add seek buttons to the control bar. These buttons allow 
 
 - [Installation](#installation)
 - [Options](#options)
+  - [Control position](#control-position)
 - [Usage](#usage)
   - [`<script>` Tag](#script-tag)
   - [Browserify/CommonJS](#browserifycommonjs)
@@ -20,8 +21,11 @@ Plugin for video.js to add seek buttons to the control bar. These buttons allow 
 ## Installation
 
 ```sh
-npm install --save videojs-seek-buttons
+npm install video.js
+npm install videojs-seek-buttons
 ```
+
+Version 3.x requires video.js version 6.x or 7.x to be installed as a peer dependency (latest v7 is recommended).
 
 ## Options
 
@@ -47,6 +51,7 @@ You also need to include the plugin's CSS.
 This is the simplest case. Get the script in whatever way you prefer and include the plugin _after_ you include [video.js][videojs], so that the `videojs` global is available.
 
 ```html
+<link rel="stylesheet" href="//path/to/video-js.css">
 <link rel="stylesheet" href="//path/to/videojs-seek-buttons.css">
 <script src="//path/to/video.min.js"></script>
 <script src="//path/to/videojs-seek-buttons.min.js"></script>
