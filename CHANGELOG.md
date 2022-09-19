@@ -1,3 +1,25 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/mister-ben/videojs-seek-buttons/compare/v2.2.1...v3.0.0) (2022-09-19)
+
+### Chores
+
+* cleanup comments ([3111020](https://github.com/mister-ben/videojs-seek-buttons/commit/3111020))
+* Move video.js to peerDependencies (#74) ([870408c](https://github.com/mister-ben/videojs-seek-buttons/commit/870408c)), closes [#74](https://github.com/mister-ben/videojs-seek-buttons/issues/74)
+* vjs verify update ([7bc9765](https://github.com/mister-ben/videojs-seek-buttons/commit/7bc9765))
+
+### Documentation
+
+* Clarify peerDependency in Readme ([a4a118f](https://github.com/mister-ben/videojs-seek-buttons/commit/a4a118f))
+
+
+### BREAKING CHANGES
+
+* video.js is no longer a dependency but a peer dependency.
+This should alleviate issues with requiring/importing the right version,
+but if video.js wasn't explicitly installed before it now needs to be.
+* es and cjs script paths change to match current video.js
+plugin standards.
+
 <a name="2.2.1"></a>
 ## [2.2.1](https://github.com/mister-ben/videojs-seek-buttons/compare/v2.2.0...v2.2.1) (2022-04-23)
 
