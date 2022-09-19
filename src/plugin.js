@@ -9,24 +9,8 @@ const defaults = {
   backIndex: 1
 };
 
-// Cross-compatibility for Video.js 5 and 6.
-const registerPlugin = videojs.registerPlugin || videojs.plugin;
-// const dom = videojs.dom || videojs;
-
-// document.sbInit = 0;
-
-// videojs.log('seek');
-// videojs.log(videojs === global.videojs);
-// videojs.log(videojs);
-// videojs.log(global.videojs);
-// videojs.log(document.body.querySelector('video'));
-
 /**
- * Function to invoke when the player is ready.
- *
- * This is a great place for your plugin to initialize itself. When this
- * function is called, the player will have its DOM and child components
- * in place.
+ * Set up buttons when the player is ready.
  *
  * @function onPlayerReady
  * @param    {Player} player
@@ -56,19 +40,13 @@ const onPlayerReady = (player, options) => {
 };
 
 /**
- * A video.js plugin.
- *
- * In the plugin function, the value of `this` is a video.js `Player`
- * instance. You cannot rely on the player being in a "ready" state here,
- * depending on how the plugin is invoked. This may or may not be important
- * to you; if not, remove the wait for "ready"!
+ * Plugin init if ready or on ready
  *
  * @function seekButtons
  * @param    {Object} [options={}]
  *           An object of options left to the plugin author to define.
  */
 const seekButtons = function(options) {
-  // document.sbInit++;
   this.ready(() => {
     onPlayerReady(this, videojs.mergeOptions(defaults, options));
   });
@@ -139,10 +117,9 @@ class SeekButton extends Button {
     }
   }
 }
-// console.log('register component with', videojs.VERSION, videojs);
 videojs.registerComponent('SeekButton', SeekButton);
 
 // Register the plugin with video.js.
-registerPlugin('seekButtons', seekButtons);
+videojs.registerPlugin('seekButtons', seekButtons);
 
 export default seekButtons;
