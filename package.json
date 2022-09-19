@@ -4,8 +4,8 @@
   "issues": "https://github.com/mister-ben/videojs-seek-buttons/issues",
   "version": "2.2.1",
   "description": "Plugin for video.js to add seek buttons to the control bar",
-  "main": "cjs/plugin.js",
-  "module": "es/plugin.js",
+  "main": "dist/videojs-seek-buttons.cjs.js",
+  "module": "dist/videojs-seek-buttons.es.js",
   "generator-videojs-plugin": {
     "version": "8.0.0"
   },
@@ -18,9 +18,7 @@
     "build": "npm-run-all -s clean -p build:*",
     "build-prod": "cross-env-shell NO_TEST_BUNDLE=1 'npm run build'",
     "build-test": "cross-env-shell TEST_BUNDLE_ONLY=1 'npm run build'",
-    "build:cjs": "babel-config-cjs -d ./cjs ./src",
     "build:css": "postcss -o dist/videojs-seek-buttons.css --config scripts/postcss.config.js src/plugin.css",
-    "build:es": "babel-config-es -d ./es ./src",
     "build:js": "rollup -c scripts/rollup.config.js",
     "build:lang": "vjslang --dir dist/lang",
     "clean": "shx rm -rf ./dist ./test/dist ./cjs ./es && shx mkdir -p ./dist ./test/dist ./cjs ./es",
@@ -40,9 +38,7 @@
     "preversion": "npm test",
     "version": "is-prerelease || npm run update-changelog && git add CHANGELOG.md",
     "watch": "npm-run-all -p watch:*",
-    "watch:cjs": "npm run build:cjs -- -w",
     "watch:css": "npm run build:css -- -w",
-    "watch:es": "npm run build:es -- -w",
     "watch:js": "npm run build:js -- -w",
     "prepublishOnly": "npm-run-all build-prod && vjsverify --verbose"
   },
@@ -104,7 +100,7 @@
     "videojs-generate-karma-config": "~8.0.0",
     "videojs-generate-postcss-config": "~3.0.0",
     "videojs-generate-rollup-config": "^7.0.0",
-    "videojs-generator-verify": "~3.0.3",
+    "videojs-generator-verify": "^4.1.0",
     "videojs-languages": "^2.0.0",
     "videojs-standard": "^8.0.4"
   },
