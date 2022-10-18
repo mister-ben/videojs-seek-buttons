@@ -1,3 +1,10 @@
+<a name="3.0.1"></a>
+## [3.0.1](https://github.com/mister-ben/videojs-seek-buttons/compare/v3.0.0...v3.0.1) (2022-10-18)
+
+### Chores
+
+* Use conventional commit prefixes with dependabot (#82) ([d8da86f](https://github.com/mister-ben/videojs-seek-buttons/commit/d8da86f)), closes [#82](https://github.com/mister-ben/videojs-seek-buttons/issues/82)
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/mister-ben/videojs-seek-buttons/compare/v2.2.1...v3.0.0) (2022-09-19)
 
