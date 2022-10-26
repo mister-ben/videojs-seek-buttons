@@ -10,8 +10,17 @@
     "version": "8.0.0"
   },
   "browserslist": [
-    "defaults",
-    "ie 11"
+    "last 3 major versions",
+    "Firefox ESR",
+    "Chrome >= 53",
+    "not dead",
+    "not ie 11",
+    "not baidu 7",
+    "not and_qq 11",
+    "not and_uc 12",
+    "not kaios 2",
+    "not op_mini all",
+    "not op_mob 64"
   ],
   "scripts": {
     "prebuild": "npm run clean",
@@ -96,7 +105,7 @@
     "postcss-cli": "^8.3.1",
     "rollup": "^2.46.0",
     "sinon": "^14.0.1",
-    "video.js": "^7.20.3",
+    "video.js": "^8.0.0-1",
     "videojs-generate-karma-config": "~8.0.0",
     "videojs-generate-postcss-config": "~3.0.0",
     "videojs-generate-rollup-config": "^7.0.0",
@@ -105,7 +114,7 @@
     "videojs-standard": "^9.0.1"
   },
   "peerDependencies": {
-    "video.js": "^6 || ^7"
+    "video.js": "^8"
   },
   "browser": "dist/videojs-seek-buttons.js"
 }
