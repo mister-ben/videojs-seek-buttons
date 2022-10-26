@@ -48,7 +48,7 @@ const onPlayerReady = (player, options) => {
  */
 const seekButtons = function(options) {
   this.ready(() => {
-    onPlayerReady(this, videojs.mergeOptions(defaults, options));
+    onPlayerReady(this, videojs.obj.merge(defaults, options));
   });
 };
 
