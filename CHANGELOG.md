@@ -1,3 +1,24 @@
+<a name="4.0.0-1"></a>
+# [4.0.0-1](https://github.com/mister-ben/videojs-seek-buttons/compare/v3.0.1...v4.0.0-1) (2022-11-21)
+
+### Features
+
+* Video.js 8 support (#97) ([597fe02](https://github.com/mister-ben/videojs-seek-buttons/commit/597fe02)), closes [#97](https://github.com/mister-ben/videojs-seek-buttons/issues/97) [#90](https://github.com/mister-ben/videojs-seek-buttons/issues/90) [#96](https://github.com/mister-ben/videojs-seek-buttons/issues/96)
+
+### Chores
+
+* **deps-dev:** bump [@babel](https://github.com/babel)/cli from 7.13.16 to 7.19.3 (#84) ([834d35f](https://github.com/mister-ben/videojs-seek-buttons/commit/834d35f)), closes [#84](https://github.com/mister-ben/videojs-seek-buttons/issues/84)
+* **deps-dev:** bump [@babel](https://github.com/babel)/runtime from 7.14.0 to 7.19.4 (#87) ([48c856d](https://github.com/mister-ben/videojs-seek-buttons/commit/48c856d)), closes [#87](https://github.com/mister-ben/videojs-seek-buttons/issues/87)
+* **deps-dev:** bump [@babel](https://github.com/babel)/runtime from 7.19.4 to 7.20.1 (#92) ([191899b](https://github.com/mister-ben/videojs-seek-buttons/commit/191899b)), closes [#92](https://github.com/mister-ben/videojs-seek-buttons/issues/92)
+* **deps-dev:** bump jsdoc from 3.6.11 to 4.0.0 (#93) ([1c48f93](https://github.com/mister-ben/videojs-seek-buttons/commit/1c48f93)), closes [#93](https://github.com/mister-ben/videojs-seek-buttons/issues/93)
+* **deps-dev:** bump karma from 6.3.16 to 6.4.1 (#88) ([930fbd4](https://github.com/mister-ben/videojs-seek-buttons/commit/930fbd4)), closes [#88](https://github.com/mister-ben/videojs-seek-buttons/issues/88)
+* **deps-dev:** bump postcss from 8.2.13 to 8.4.18 (#89) ([614ca7e](https://github.com/mister-ben/videojs-seek-buttons/commit/614ca7e)), closes [#89](https://github.com/mister-ben/videojs-seek-buttons/issues/89)
+* **deps-dev:** bump postcss from 8.4.18 to 8.4.19 (#95) ([12c496f](https://github.com/mister-ben/videojs-seek-buttons/commit/12c496f)), closes [#95](https://github.com/mister-ben/videojs-seek-buttons/issues/95)
+* **deps-dev:** bump rollup from 2.46.0 to 2.79.1 (#83) ([23ef14d](https://github.com/mister-ben/videojs-seek-buttons/commit/23ef14d)), closes [#83](https://github.com/mister-ben/videojs-seek-buttons/issues/83)
+* **deps-dev:** bump sinon from 14.0.1 to 14.0.2 (#94) ([2562054](https://github.com/mister-ben/videojs-seek-buttons/commit/2562054)), closes [#94](https://github.com/mister-ben/videojs-seek-buttons/issues/94)
+* **deps-dev:** bump sinon from 9.2.4 to 14.0.1 (#86) ([f2fa7b8](https://github.com/mister-ben/videojs-seek-buttons/commit/f2fa7b8)), closes [#86](https://github.com/mister-ben/videojs-seek-buttons/issues/86)
+* **deps-dev:** bump videojs-generate-karma-config from 8.0.0 to 8.0.1 (#85) ([2458e4e](https://github.com/mister-ben/videojs-seek-buttons/commit/2458e4e)), closes [#85](https://github.com/mister-ben/videojs-seek-buttons/issues/85)
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/mister-ben/videojs-seek-buttons/compare/v3.0.0...v3.0.1) (2022-10-18)
 
