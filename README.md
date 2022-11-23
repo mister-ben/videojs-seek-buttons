@@ -25,6 +25,8 @@ npm install video.js
 npm install videojs-seek-buttons
 ```
 
+Version 4.x requires video.js version 8.x to be installed as a peer dependency. Earlier versions of Video.js are not supported.
+
 Version 3.x requires video.js version 6.x or 7.x to be installed as a peer dependency (latest v7 is recommended).
 
 ## Options
