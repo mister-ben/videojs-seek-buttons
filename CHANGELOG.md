@@ -1,3 +1,10 @@
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/mister-ben/videojs-seek-buttons/compare/v4.0.0...v4.0.1) (2022-11-23)
+
+### Documentation
+
+* Note version support in readme ([9778b38](https://github.com/mister-ben/videojs-seek-buttons/commit/9778b38))
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/mister-ben/videojs-seek-buttons/compare/v4.0.0-1...v4.0.0) (2022-11-23)
 
