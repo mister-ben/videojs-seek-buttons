@@ -1,3 +1,17 @@
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/mister-ben/videojs-seek-buttons/compare/v4.0.0-1...v4.0.0) (2022-11-23)
+
+### Bug Fixes
+
+* **deps:** bump engine.io from 6.2.0 to 6.2.1 (#98) ([934f2a1](https://github.com/mister-ben/videojs-seek-buttons/commit/934f2a1)), closes [#98](https://github.com/mister-ben/videojs-seek-buttons/issues/98)
+
+### Chores
+
+* **deps-dev:** bump [@babel](https://github.com/babel)/runtime from 7.19.4 to 7.20.1 (#99) ([232e2d1](https://github.com/mister-ben/videojs-seek-buttons/commit/232e2d1)), closes [#99](https://github.com/mister-ben/videojs-seek-buttons/issues/99)
+* **deps-dev:** bump postcss from 8.4.18 to 8.4.19 (#100) ([9d68302](https://github.com/mister-ben/videojs-seek-buttons/commit/9d68302)), closes [#100](https://github.com/mister-ben/videojs-seek-buttons/issues/100)
+* **deps-dev:** bump sinon from 14.0.1 to 14.0.2 (#101) ([1af4bd8](https://github.com/mister-ben/videojs-seek-buttons/commit/1af4bd8)), closes [#101](https://github.com/mister-ben/videojs-seek-buttons/issues/101)
+* update dep to release version of vjs 8 ([4398518](https://github.com/mister-ben/videojs-seek-buttons/commit/4398518))
+
 <a name="4.0.0-1"></a>
 # [4.0.0-1](https://github.com/mister-ben/videojs-seek-buttons/compare/v3.0.1...v4.0.0-1) (2022-11-21)
 
