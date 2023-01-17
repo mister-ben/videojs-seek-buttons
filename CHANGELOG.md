@@ -1,3 +1,24 @@
+<a name="4.0.2"></a>
+## [4.0.2](https://github.com/mister-ben/videojs-seek-buttons/compare/v4.0.1...v4.0.2) (2023-01-17)
+
+### Bug Fixes
+
+* **deps:** bump decode-uri-component from 0.2.0 to 0.2.2 (#106) ([7c78da1](https://github.com/mister-ben/videojs-seek-buttons/commit/7c78da1)), closes [#106](https://github.com/mister-ben/videojs-seek-buttons/issues/106)
+* **deps:** bump json5 from 2.1.3 to 2.2.3 (#111) ([d9d5e95](https://github.com/mister-ben/videojs-seek-buttons/commit/d9d5e95)), closes [#111](https://github.com/mister-ben/videojs-seek-buttons/issues/111)
+
+### Chores
+
+* **deps-dev:** bump [@babel](https://github.com/babel)/cli from 7.19.3 to 7.20.7 (#110) ([0ad741d](https://github.com/mister-ben/videojs-seek-buttons/commit/0ad741d)), closes [#110](https://github.com/mister-ben/videojs-seek-buttons/issues/110)
+* **deps-dev:** bump [@babel](https://github.com/babel)/runtime from 7.20.1 to 7.20.6 (#104) ([753f849](https://github.com/mister-ben/videojs-seek-buttons/commit/753f849)), closes [#104](https://github.com/mister-ben/videojs-seek-buttons/issues/104)
+* **deps-dev:** bump [@babel](https://github.com/babel)/runtime from 7.20.6 to 7.20.7 (#109) ([7f81b6d](https://github.com/mister-ben/videojs-seek-buttons/commit/7f81b6d)), closes [#109](https://github.com/mister-ben/videojs-seek-buttons/issues/109)
+* **deps-dev:** bump postcss from 8.4.19 to 8.4.20 (#107) ([5d91486](https://github.com/mister-ben/videojs-seek-buttons/commit/5d91486)), closes [#107](https://github.com/mister-ben/videojs-seek-buttons/issues/107)
+* **deps-dev:** bump postcss from 8.4.20 to 8.4.21 (#114) ([aa9370b](https://github.com/mister-ben/videojs-seek-buttons/commit/aa9370b)), closes [#114](https://github.com/mister-ben/videojs-seek-buttons/issues/114)
+* **deps-dev:** bump sinon from 14.0.2 to 15.0.0 (#105) ([6d57ed0](https://github.com/mister-ben/videojs-seek-buttons/commit/6d57ed0)), closes [#105](https://github.com/mister-ben/videojs-seek-buttons/issues/105)
+* **deps-dev:** bump sinon from 15.0.0 to 15.0.1 (#108) ([83ebc32](https://github.com/mister-ben/videojs-seek-buttons/commit/83ebc32)), closes [#108](https://github.com/mister-ben/videojs-seek-buttons/issues/108)
+* **deps-dev:** bump video.js from 8.0.0 to 8.0.1 (#102) ([f89a7fc](https://github.com/mister-ben/videojs-seek-buttons/commit/f89a7fc)), closes [#102](https://github.com/mister-ben/videojs-seek-buttons/issues/102)
+* **deps-dev:** bump video.js from 8.0.1 to 8.0.2 (#103) ([379dc99](https://github.com/mister-ben/videojs-seek-buttons/commit/379dc99)), closes [#103](https://github.com/mister-ben/videojs-seek-buttons/issues/103)
+* **deps-dev:** bump video.js from 8.0.2 to 8.0.3 (#112) ([6401398](https://github.com/mister-ben/videojs-seek-buttons/commit/6401398)), closes [#112](https://github.com/mister-ben/videojs-seek-buttons/issues/112)
+
 <a name="4.0.1"></a>
 ## [4.0.1](https://github.com/mister-ben/videojs-seek-buttons/compare/v4.0.0...v4.0.1) (2022-11-23)
 
