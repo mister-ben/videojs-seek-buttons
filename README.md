@@ -20,14 +20,19 @@ Plugin for video.js to add seek buttons to the control bar. These buttons allow 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Installation
 
+Version 3.x requires video.js version 6.x or 7.x to be installed as a peer dependency (latest v7 is recommended).
+
 ```sh
-npm install video.js
-npm install videojs-seek-buttons
+npm install videojs-seek-buttons@latest7
 ```
 
 Version 4.x requires video.js version 8.x to be installed as a peer dependency. Earlier versions of Video.js are not supported.
 
-Version 3.x requires video.js version 6.x or 7.x to be installed as a peer dependency (latest v7 is recommended).
+```sh
+npm install videojs-seek-buttons@latest8
+```
+
+However Video.js 8.2.0 + has a [built-in seek buttons functionality](https://videojs.com/guides/options/#skipbuttons). Consider using that instead of this plugin.
 
 ## Options
 
