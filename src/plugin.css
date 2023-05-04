@@ -2,27 +2,14 @@
 
   /* This class is added to the video.js element by the plugin by default. */
   & .vjs-seek-button {
-    font-family: 'VideoJS';
     cursor: pointer;
-    font-weight: 400;
-    font-style: normal;
 
     &.skip-back .vjs-icon-placeholder::before {
       transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      /* IE 9 */
-      -webkit-transform: rotate(-45deg);
-      /* Safari */
-      content: '\f116';
     }
 
     &.skip-forward .vjs-icon-placeholder::before {
       transform: scale(-1, 1) rotate(-45deg);
-      -ms-transform: scale(-1, 1) rotate(-45deg);
-      /* IE 9 */
-      -webkit-transform: scale(-1, 1) rotate(-45deg);
-      /* Safari */
-      content: '\f116';
     }
   }
 }
