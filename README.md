@@ -43,7 +43,7 @@ However Video.js 8.2.0 + has a [built-in seek buttons functionality](https://vid
 
 ### Control position
 
-`forwardIndex` and `backIndex` set the posiiton of the button in the control bar. Note if both a back and forward button are used, the forward button is inserted first.
+`forwardIndex` and `backIndex` set the position of the button in the control bar. Note if both a back and forward button are used, the forward button is inserted first.
 
 Assuming the standard control bar, the play button is at index `0`. With the default index of `1` for both, the forward button is inserted after the play button, then the back button is inserted after the play button and before the forward button. Setting `backIndex` to `0` would place the back button before the play button instead, so they surround the play button.
 
