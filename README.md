@@ -2,6 +2,8 @@
 
 Plugin for video.js to add seek buttons to the control bar. These buttons allow the user to skip forward or back by a configured number of seconds.
 
+> **Legacy maintenance for Video.js 6 and 7.** For Video.js 8, see the [migration guide](https://github.com/mister-ben/videojs-seek-buttons/tree/master#installation).
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -20,14 +22,13 @@ Plugin for video.js to add seek buttons to the control bar. These buttons allow 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Installation
 
+Plugin 3.x requires Video.js 6.x or 7.x as a peer dependency. With a compatible player already installed:
+
 ```sh
-npm install video.js
-npm install videojs-seek-buttons
+npm install videojs-seek-buttons@latest7
 ```
 
-Version 4.x requires video.js version 8.x to be installed as a peer dependency. Earlier versions of Video.js are not supported.
-
-Version 3.x requires video.js version 6.x or 7.x to be installed as a peer dependency (latest v7 is recommended).
+Video.js 6 and 7 are unsupported upstream. This branch is for limited maintenance of the plugin.
 
 ## Options
 
