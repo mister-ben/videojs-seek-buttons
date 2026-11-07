@@ -2,6 +2,8 @@
 
 Plugin for video.js to add seek buttons to the control bar. These buttons allow the user to skip forward or back by a configured number of seconds.
 
+> **Frozen Video.js 8 branch.** The final npm release is 4.0.3. For Video.js 6 or 7, see the [legacy 3.x branch](https://github.com/mister-ben/videojs-seek-buttons/tree/v3.x-vjs7).
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -20,19 +22,19 @@ Plugin for video.js to add seek buttons to the control bar. These buttons allow 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Installation
 
-Version 3.x requires video.js version 6.x or 7.x to be installed as a peer dependency (latest v7 is recommended).
+Video.js 8.2 and later versions of 8.x have seek button functionality built-in. Configure the built-in buttons when creating the player instead of using this plugin:
 
-```sh
-npm install videojs-seek-buttons@latest7
+```js
+videojs('my-video', {
+  controlBar: {
+    skipButtons: { backward: 10, forward: 10 }
+  }
+});
 ```
 
-Version 4.x requires video.js version 8.x to be installed as a peer dependency. Earlier versions of Video.js are not supported.
+The plugin's `back` option becomes `backward`. After switching, remove the plugin initialization, JavaScript import or script tag, and stylesheet.
 
-```sh
-npm install videojs-seek-buttons@latest8
-```
-
-However Video.js 8.2.0 + has a [built-in seek buttons functionality](https://videojs.com/guides/options/#skipbuttons). Consider using that instead of this plugin.
+The built-in controls accept 5, 10, or 30 seconds. Check custom intervals, button placement, and plugin-specific styles before switching. For Video.js 8.0–8.1 or a setup that still needs the plugin, the frozen release remains available as `videojs-seek-buttons@4.0.3` or `videojs-seek-buttons@latest8`.
 
 ## Options
 
