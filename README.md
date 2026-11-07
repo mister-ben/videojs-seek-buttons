@@ -22,7 +22,7 @@ Plugin for video.js to add seek buttons to the control bar. These buttons allow 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Installation
 
-For Video.js 8.2 and later, configure the built-in buttons when creating the player:
+Video.js 8.2 and later versions of 8.x have seek button functionality built-in. Configure the built-in buttons when creating the player instead of using this plugin:
 
 ```js
 videojs('my-video', {
