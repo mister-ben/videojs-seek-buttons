@@ -3,7 +3,10 @@ updates:
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: daily
+      interval: monthly
+    groups:
+      development-dependencies:
+        dependency-type: development
     commit-message:
       prefix: fix
       prefix-development: chore
